@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div id="main-game">
+
+        <div id="menu">
+            <p id="title"><b>MAZE GAME!</b><br>Created by Zac Moss</p>
+            <br>
+            <p id="menu-text">What size field would you like?</p>
+            <div id="menu-buttons">
+
+                <div id="size">
+                    <button id="small">SMALL</button>
+                    <button id="medium">MEDIUM</button>
+                    <button id="big">BIG</button>
+                    <br>
+                    <button id="memory">MEMORY</button>
+                    <button id="random">RANDOM</button>
+                    <button id="custom">CUSTOM</button>
+                    <br>
+                    <button id="rules">RULES</button>
+                </div>
+
+                <div id="custom-settings" hidden="true">
+                    <br>
+                    <label for="width">Width:</label>
+                    <input type="text" id="width" name="width">
+                    <label for="height">Height:</label>
+                    <input type="text" id="height" name="height">
+                    <br>
+                    <label for="holes-slider" id="holes-label">Percentage of holes: 30%</label>
+                    <input type="range" min="10" max="95" value="30" id="holes-slider" name="holes-slider">
+                    <br>
+                    <button id="go">GO!</button>
+                </div>
+            </div>
+        </div>
+        <div id="rules-explanation" hidden="true">
+            <p>In <b>Maze Game</b> the aim where the aim is to reach your goal without falling in any holes!</p>
+            <br>
+            <p>This is your <b>player.</b></p><div class="rules-square" id="player"></div>
+            <br>
+            <p>This is your <b>goal.</b></p><div class="rules-square" id="goal"></div>
+            <br>
+            <p>This is the <b>path</b> you have taken so far.</p><div class="rules-square" id="path"></div>
+            <br>
+            <p>This is a <b>hole.</b> If you touch one the game is over!</p><div class="rules-square" id="hole"></div>
+            <br>
+            <p>To play, press one of the four directional buttons to move: <b>Up, Down, Left, and Right,</b> or one of the <b>four arrow keys.</b></p>
+            <br>
+            <p>To start again, press <b>Reset.</b></p>
+            <br>
+            <p>Press <b>Memory</b> to play a pre-made map, or <b>Random</b> to have one randomly generated for you!</p>
+            <br>
+            <p>If you are feeling creative, press <b>Custom</b> to enter your own settings.</p>
+            <br>
+            <p>Loading times will be longer if you choose <b>Random</b> or <b>Custom.</b></p>
+            <br>
+            <p><b>Have fun!</b></p>
+            <br>
+            <button id="back">BACK</button>
+            
+        </div>
+
+        <div id="gameplay" hidden="true">
+        <!-- Game display div -->
+            <div id="gameGrid"></div>
+
+            <div id="game-buttons">
+                <div id="dir">
+                    <button id="up" >UP</button>
+                    <button id="down" >DOWN</button>
+                    <button id="left" >LEFT</button>
+                    <button id="right" >RIGHT</button>
+                    <button id="reset">RESET</button>
+                </div>
+            </div>
+        </div>
+        <div id="new-game-div" hidden="true">
+            <p id="gameover-text">What size field would you like?</p>
+            <button id="new-game">NEW GAME</button>
+        </div>
+
+                
+
+           
+    </div>
+    <script src="./resources/javascript/javascript.js"></script>
+</body>
+</html>
