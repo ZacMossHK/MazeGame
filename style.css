@@ -177,17 +177,51 @@ button {
     #menu, #new-game-div {
         width: 75%;
     }
+    #menu {
+        margin: 1rem auto 0 auto;
+    }
+
+    #gameplay {
+        margin: 0.1rem auto 0 auto;
+    }
+
+    #new-game-div {
+        margin: 2rem auto 0 auto;
+    }
 }
 
 @media only screen and (min-width: 737px) and (max-width: 812px) {
     #menu, #new-game-div {
         width: 70%;
     }
+    #menu {
+        margin: 1rem auto 0 auto;
+    }
+
+    #gameplay {
+        margin: 0.1rem auto 0 auto;
+    }
+
+    #new-game-div {
+        margin: 2rem auto 0 auto;
+    }
 }
 
 @media only screen and (min-width: 813px) and (max-width: 1024px) {
     #menu, #new-game-div {
         width: 55%;
+    }
+
+    #menu {
+        margin: 1rem auto 0 auto;
+    }
+
+    #gameplay {
+        margin: 0.1rem auto 0 auto;
+    }
+
+    #new-game-div {
+        margin: 2rem auto 0 auto;
     }
 }
 
