@@ -30,6 +30,7 @@
                     <button id="rules">RULES</button>
                 </div>
 
+                <!-- This div only shows on tablets and computers -->
                 <div id="custom-settings" hidden="true">
                     <br>
                     <label for="width">Width:</label>
@@ -45,6 +46,25 @@
                 </div>
             </div>
         </div>
+
+        <!-- this div only shows on mobile -->
+        <div id="custom-settings-mob" hidden="true">
+            <p id="custom-loading-mob" hidden="true">Loading...</p>
+            <div id="custom-options-mob">
+                <label for="width-mob">Width:</label>
+                <input type="text" id="width-mob" name="width-mob">
+                <label for="height-mob">Height:</label>
+                <input type="text" id="height-mob" name="height-mob">
+                <br>
+                <label for="holes-slider-mob" id="holes-label-mob">Percentage of holes: 30%</label>
+                <br>
+                <input type="range" min="10" max="95" value="30" id="holes-slider-mob" name="holes-slider-mob">
+                <br>
+                <p>More holes mean longer wait times!<br>Press 'wait' if you get an error.</p>
+                <button id="go-mob" class="buttons-mob">GO!</button><button id="back-custom-mob" class="buttons-mob">BACK</button>
+            </div>
+        </div>
+
         <div id="rules-explanation" hidden="true">
             <p>In <b>Maze Game</b> the aim where the aim is to reach your goal without falling in any holes!</p>
             <br>
