@@ -599,7 +599,7 @@ smallButton.onclick = () => {
     sizeButtons.hidden = true;
     text.innerHTML = 'Loading...<br><br>If this takes too long, please refresh the page!<br>Click wait if page becomes unresponsive.'
     if (!memory) {
-    setTimeout(function(){startGame(10,30,1.5);},1);
+    setTimeout(function(){startGame(10,30,1.5,0.5);},1);
     } else {
         startMemoryGame(smallFields);
     }
