@@ -1,3 +1,4 @@
+
 html {
     font-size: 36px;
 }
@@ -171,3 +172,23 @@ button {
 #hole {
     background-color: #ff5a31;
 }
+
+@media only screen and (max-width: 736px) {
+    #menu, #new-game-div {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 737px) and (max-width: 812px) {
+    #menu, #new-game-div {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 813px) and (max-width: 1024px) {
+    #menu, #new-game-div {
+        width: 55%;
+    }
+}
+
+
