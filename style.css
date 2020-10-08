@@ -220,3 +220,22 @@ button {
         /*margin: 2rem auto 0 auto;*/
     }
 }
+
+@media only screen and (min-width: 1025px) and (max-width: 1112px) {
+    #menu, #new-game-div, #custom-settings-mob {
+        width: 55%;
+    }
+
+    #menu {
+        /*margin: 1rem auto 0 auto;*/
+
+    }
+
+    #gameplay {
+        /*margin: 2rem auto 0 auto;*/
+    }
+
+    #new-game-div {
+        /*margin: 2rem auto 0 auto;*/
+    }
+}
