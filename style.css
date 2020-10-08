@@ -1,4 +1,3 @@
-
 html {
     font-size: 36px;
 }
@@ -23,25 +22,32 @@ input {
     width: 10%
 }
 
-#holes-slider {
+#holes-slider, #holes-slider-mob {
     width: 60%;
     font-family: 'Nunito';
 }
 
-#main-game {
-    text-align: center;
-    
+#menu, #gameplay, #new-game-div, #custom-settings-mob {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-#menu {
+#menu, #custom-settings-mob {
     border: solid;
     width: 45%;
     border-radius: 5%;
     padding: 50px 0;
-    margin: 3rem auto 0 auto;
+    /*margin: 3rem auto 0 auto;*/
     background-color: white;
+
 }
 
+.buttons-mob{
+    margin: 0 10px;
+}
 #rules-explanation {
     font-size: 0.6rem;
     width: 70%;
@@ -59,9 +65,7 @@ input {
     
 }
 
-
-
-#menu, #game-buttons {
+#menu, #custom-settings-mob, #game-buttons, #main-game {
     text-align: center;
 }
 
@@ -80,19 +84,7 @@ button {
     font-size: 0.5rem;
     cursor: pointer;
 }
-/*
-#up, #down, #left, #right, #small, #medium, #big, #random, #memory, #custom, #reset, #new-game, #go, #rules, #back {
-    width: 3rem;
-    height: 1.1rem;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    font-family: 'Nunito';
-    border-radius: 10%;
-    font-size: 0.5rem;
-    cursor: pointer;
-}
-*/
+
 
 #new-game {
     width: 4rem;
@@ -102,13 +94,12 @@ button {
     border: solid;
     border-radius: 5%;
     background-color: white;
-    margin: 2rem auto 0 auto;
     width: 98%;
     padding: 2rem 0;
 }
 
 #new-game-div {
-    margin: 5rem auto 0 auto;
+    /*margin: 5rem auto 0 auto;*/
     border: solid;
     border-radius: 5%;
     width: 45%;
@@ -125,32 +116,10 @@ button {
     text-align: center;
     margin: 0 auto;
     display: grid;
-
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-
-}
-
-#gameGrid.fade {
-    opacity:1;
 }
 
 #gameSquare {
-    opacity: 1;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3 ease-in-out;
 }
-
-#gameSquare.fade {
-    opacity:0;
-  }
 
 .rules-square {
     width: 50px;
@@ -174,55 +143,80 @@ button {
 }
 
 @media only screen and (max-width: 736px) {
-    #menu, #new-game-div {
+    #menu, #new-game-div, #custom-settings-mob {
         width: 75%;
     }
-    #menu {
-        margin: 1rem auto 0 auto;
+    #menu, #custom-settings-mob {
+        padding: 10px 0;
     }
 
     #gameplay {
-        margin: 0.1rem auto 0 auto;
+        padding: 5px 0;
+
     }
 
     #new-game-div {
-        margin: 2rem auto 0 auto;
+    }
+    #game-buttons {
+        margin: 0 auto 0 auto;
     }
 }
 
 @media only screen and (min-width: 737px) and (max-width: 812px) {
-    #menu, #new-game-div {
+    #menu, #new-game-div, #custom-settings-mob {
         width: 70%;
     }
-    #menu {
-        margin: 1rem auto 0 auto;
+    #menu, #custom-settings-mob {
+        padding: 10px 0;
     }
 
     #gameplay {
-        margin: 0.1rem auto 0 auto;
+        padding: 5px 0;
     }
 
     #new-game-div {
-        margin: 2rem auto 0 auto;
+    }
+    #game-buttons {
+        margin: 0 auto 0 auto;
     }
 }
 
-@media only screen and (min-width: 813px) and (max-width: 1024px) {
-    #menu, #new-game-div {
+@media only screen and (min-width: 813px) and (max-width: 901px) {
+    #menu, #new-game-div, #custom-settings-mob {
+        width: 55%;
+    }
+
+    #menu, #custom-settings-mob {
+        padding: 10px 0;
+    }
+
+    #game-buttons {
+        margin: 0 auto 0 auto;
+    }
+
+    #gameplay {
+        padding: 5px 0;
+    }
+
+    #new-game-div {
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+    #menu, #new-game-div, #custom-settings-mob {
         width: 55%;
     }
 
     #menu {
-        margin: 1rem auto 0 auto;
+        /*margin: 1rem auto 0 auto;*/
+
     }
 
     #gameplay {
-        margin: 0.1rem auto 0 auto;
+        /*margin: 2rem auto 0 auto;*/
     }
 
     #new-game-div {
-        margin: 2rem auto 0 auto;
+        /*margin: 2rem auto 0 auto;*/
     }
 }
-
-
