@@ -599,7 +599,7 @@ smallButton.onclick = () => {
     sizeButtons.hidden = true;
     text.innerHTML = 'Loading...<br><br>If this takes too long, please refresh the page!'
     if (!memory) {
-    setTimeout(function(){startGame(10,30,1.5,0.58);},1);
+    setTimeout(function(){startGame(10,30,1.5,1);},1);
     } else {
         startMemoryGame(smallFields);
     }
@@ -609,7 +609,7 @@ mediumButton.onclick = () => {
     sizeButtons.hidden = true;
     text.innerHTML = 'Loading...<br><br>If this takes too long, please refresh the page!';
     if (!memory) {
-        setTimeout(function(){startGame(18,70,1.9);},1);
+        setTimeout(function(){startGame(18,70,2.5);},1);
     } else {
         startMemoryGame(mediumFields);
     }
@@ -619,7 +619,7 @@ bigButton.onclick =() => {
     sizeButtons.hidden = true;
     text.innerHTML = 'Loading...<br><br>Big mazes take longer, please wait!';
     if (!memory) {
-        setTimeout(function(){startGame(25,90,2.2);},1);
+        setTimeout(function(){startGame(25,90,3);},1);
     } else {
         startMemoryGame(bigFields);
     }
